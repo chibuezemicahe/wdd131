@@ -1,6 +1,22 @@
+:root{
+    --primary-color:#232220;
+    --secondary-color:#ffffff;
+    --accent1-color:#F26B38;
+    --accent2-color:#007BFF;
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+}
+
+
+
+*{
+    font-family: var(--text-font);
+    font-size: 15px;
+    /* color: var(--primary-color); */
+}
+
 /* Google Fonts */
 body {
-    font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     margin: 0;
@@ -80,7 +96,6 @@ section h2{
     align-items: stretch;
     gap: 20px; /
 }
-
 
 .card__image {
     width: 200px;
