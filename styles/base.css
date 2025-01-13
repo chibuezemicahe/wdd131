@@ -78,15 +78,15 @@ section h2{
 .card__content {
     display: flex;
     align-items: stretch;
-    gap: 20px; /* Space between image and text */
+    gap: 20px; /
 }
 
-/* Image Styling */
+
 .card__image {
-    width: 200px; /* Fixed width */
+    width: 200px;
     height: auto;
-    max-height: 100%; /* Ensure image stretches to fill the text height */
-    object-fit: cover; /* Maintain image aspect ratio */
+    max-height: 100%; 
+    object-fit: cover; 
     border-radius: 8px;
 }
 
