@@ -1,0 +1,119 @@
+/* Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #003366;
+    padding: 10px;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav__list li {
+    margin: 0 15px;
+}
+
+.nav__list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav__list a:hover {
+    color: #ffcc00;
+}
+
+/* Main Section */
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h2 {
+    font-size: 24px;
+    color: #004080;
+}
+
+section h2{
+    text-align: center;
+}
+/* Card Content Flex Layout */
+.card__content {
+    display: flex;
+    align-items: stretch;
+    gap: 20px; /* Space between image and text */
+}
+
+/* Image Styling */
+.card__image {
+    width: 200px; /* Fixed width */
+    height: auto;
+    max-height: 100%; /* Ensure image stretches to fill the text height */
+    object-fit: cover; /* Maintain image aspect ratio */
+    border-radius: 8px;
+}
+
+/* Text Styling */
+.card__text {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Resources List Styles */
+.resources__list,
+.stack__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resources__list li,
+.stack__list li {
+    margin-bottom: 8px;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004080;
+    color: #fff;
+}
