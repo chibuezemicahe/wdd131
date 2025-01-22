@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osun State</title>
+    <link rel="stylesheet" href="./styles/place.css">
+    <script src="./scripts/place.js" defer> </script>
+</head>
+<body>
+    <header>
+        <h1>Osun State</h1>
+        <picture>
+            <source srcset="images/osun-state-1.webp" media="(max-width: 500px)">
+            <source srcset="images/osun-state-2.webp" media="(max-width: 1000px)">
+            <img srcset="images/osun-state-3.webp" alt="Hero Photo" width="500" height="250">
+        </picture>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <section class="data-section">
+                <h2>Data</h2>
+                <ul class="info-list">
+                    <li><strong>Area:</strong> 124,041 sqkm</li>
+                    <li><strong>Population:</strong> 1,452,235</li>
+                    <li><strong>Capital:</strong> Osogbo</li>
+                    <li><strong>Languages:</strong> English, Yoruba</li>
+                    <li><strong>Currency:</strong> Naira</li>
+                    <li><strong>Calling Code:</strong> +234</li>
+                    <li><strong>Internet TLD:</strong> .mg</li>
+                </ul>
+            </section>
+
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <div class="weather-data">
+                    <p id="temp"><strong>Temperature:</strong> 30°C</p>
+                    <p><strong>Conditions:</strong> Mostly Sunny</p>
+                    <p id="speed"><strong>Wind:</strong> 5 km/h</p>
+                    <p id="winchill">   </p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> Micah Erumaka, Nigeria</p>
+        <p id="lastModified">&copy; 2023 My Website</p>
+    </footer>
+</body>
+</html>
