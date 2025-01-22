@@ -65,6 +65,14 @@ section h2 {
 }
 
 
+.weather-section h2::after {
+    content: "☀️"; /* Example icon */
+    position: absolute;
+    right: -1.5rem;
+    top: 0;
+    font-size: 1.5rem;
+}
+
 /* Info list styling */
 .info-list {
     list-style: none;
