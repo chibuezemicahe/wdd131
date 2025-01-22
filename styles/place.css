@@ -4,7 +4,7 @@
     --secondary-color: #ffcc00; /* Contrasts with the primary color */
     --background-color: #f5f5f5; /* Neutral background */
     --text-color: #333;
-    --font-family: 'Arial', sans-serif;
+    --font-family: 'Roboto Condensed', sans-serif;;
 }
 
 /* Global resets and base styling */
