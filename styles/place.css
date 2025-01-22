@@ -57,17 +57,17 @@ section h2 {
 }
 
 /* Add weather icon as a pseudo-element */
-.weather-section h2::after {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-left: 8px;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 1-4 8h-.86A4.14 4.14 0 0 1 3 5.86a4.14 4.14 0 0 1 4.14-4.14h.5A5 5 0 0 1 12 2zM2 12h20v2H2zm2 5h16v2H4z"/></svg>');
-    background-size: cover;
+.weather-section h2 {
+    display: inline-flex;
+    align-items: center;
 }
 
-
+.weather-section .weather-icon {
+    margin-left: 8px; /* Space between text and icon */
+    width: 24px; /* Set the width */
+    height: 24px; /* Set the height */
+    fill: orange; /* You can style the icon with the primary color or any other color */
+}
 
 /* Info list styling */
 .info-list {
