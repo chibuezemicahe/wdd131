@@ -1,9 +1,8 @@
 /* Global variables for consistent theming */
 :root {
-    --primary-color: #034a23; /* Inspired by Osun State's natural scenery */
-    --secondary-color: #ffcc00; /* Contrasts with the primary color */
-    --background-color: #f5f5f5; /* Neutral background */
-    --text-color: #333;
+    --primary-color: #034a23; 
+    --secondary-color: #ffcc00; 
+    --background-color: #f5f5f5; 
     --font-family: 'Roboto Condensed', sans-serif;;
 }
 
@@ -57,13 +56,18 @@ section h2 {
     position: relative;
 }
 
-/* Pseudo-element for weather icon */
+/* Here I Add weather icon as a pseudo-element */
 .weather-section h2::after {
-    content: "☀️"; /* Example icon */
+    content: '';
     position: absolute;
-    right: -1.5rem;
-    top: 0;
-    font-size: 1.5rem;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 24px; 
+    height: 24px; 
+    background-image: url('../images/weather.svg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
 /* Info list styling */
@@ -92,7 +96,7 @@ footer {
     }
 
     section {
-        flex: 1; /* Equal width for data and weather sections */
+        flex: 1; 
     }
 }
 
