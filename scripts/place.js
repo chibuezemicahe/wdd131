@@ -14,18 +14,18 @@ const calculateWindChillF = (temperature, windSpeed) =>
     35.74 + (0.6215 * temperature) - (35.75 * windSpeed ** 0.16) + (0.4275 * temperature * windSpeed ** 0.16);
 
 // Define variables
-const unit = "A"; // Set to "C" for Celsius or "F" for Fahrenheit
-const temperature = -6; // Example temperature
-const windSpeed = 4.8; // Example wind speed
+const unit = "C"; 
+const temperature = -6; 
+const windSpeed = 4.8; 
 
-// Calculate and display wind chill if conditions are met
+// Here I Calculate and display wind chill if conditions are met
 let windChill;
 if ((unit === "C" && temperature <= 10 && windSpeed > 4.8) || 
     (unit === "F" && temperature <= 50 && windSpeed > 3)) {
     windChill = unit === "C" 
         ? calculateWindChill(temperature, windSpeed) 
         : calculateWindChillF(temperature, windSpeed);
-    windChill = windChill.toFixed(2); // Round to 2 decimal places
+    windChill = windChill.toFixed(2); 
 } else {
     windChill = "N/A";
 }

@@ -6,7 +6,6 @@
     --font-family: 'Roboto Condensed', sans-serif;;
 }
 
-/* Global resets and base styling */
 body {
     margin: 0;
     font-family: var(--font-family);
@@ -56,12 +55,12 @@ section h2 {
     position: relative;
 }
 
-/* Add weather icon as a pseudo-element */
+
 .weather-icon {
-    width: 24px; /* Adjust size */
-    height: 24px; /* Adjust size */
-    vertical-align: middle; /* Align with text */
-    margin-left: 8px; /* Add space between text and icon */
+    width: 24px; 
+    height: 24px; 
+    vertical-align: middle; 
+    margin-left: 8px; 
 }
 
 
