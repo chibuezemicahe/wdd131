@@ -57,17 +57,11 @@ section h2 {
 }
 
 /* Here I Add weather icon as a pseudo-element */
-.weather-section h2::after {
-    content: '';
-    position: absolute;
-    right: -2rem;
-    top: 50%;
-    transform: translateY(-50%); 
-    width: 24px; 
-    height: 24px; 
-    background-image: url('../images/weather.svg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
+.weather-icon {
+    width: 24px; /* Adjust size */
+    height: 24px; /* Adjust size */
+    vertical-align: middle; /* Align with text */
+    margin-left: 8px; /* Add space between text and icon */
 }
 
 /* Info list styling */
