@@ -57,17 +57,13 @@ section h2 {
 }
 
 /* Add weather icon as a pseudo-element */
-.weather-section h2 {
-    display: inline-flex;
-    align-items: center;
+.weather-icon {
+    width: 24px; /* Adjust size */
+    height: 24px; /* Adjust size */
+    vertical-align: middle; /* Align with text */
+    margin-left: 8px; /* Add space between text and icon */
 }
 
-.weather-section .weather-icon {
-    margin-left: 8px; /* Space between text and icon */
-    width: 24px; /* Set the width */
-    height: 24px; /* Set the height */
-    fill: orange; /* You can style the icon with the primary color or any other color */
-}
 
 /* Info list styling */
 .info-list {
