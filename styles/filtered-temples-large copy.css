@@ -1,0 +1,36 @@
+/* When screen is 768px or larger, switch to 3 columns */
+@media (min-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* Hamburger Icon */
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #34495e;
+        padding: 0.5rem;
+    }
+    
+    .nav__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .nav__list li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .nav__list li a:hover {
+        color: #f1c40f;
+    }
+}
