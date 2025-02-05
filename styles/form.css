@@ -1,13 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #034a23;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
 }
 
 form {
@@ -17,6 +33,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
+    margin-top: 80px; /* Adjusted margin to separate from header */
 }
 
 form label {
