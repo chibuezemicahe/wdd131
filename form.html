@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+    <form action="review.html" method="get">
+        <label for="name">Product Name:</label>
+       <select name="name" id="product-select" required>
+            <option value="Select a Product " disabled id="selprod">Select a Product </option>    
+       </select>    
+        <div class="stars">
+            <label for="stars">Rating:</label>
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar" class="star">&#9733;</label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar" class="star">&#9733;</label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar" class="star">&#9733;</label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar" class="star">&#9733;</label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar" class="star">&#9733;</label>
+        </div>
+        <label for="installationD">Date Of installation:</label>
+        <input type="date" name="installationD" id="installationD" required>
+        <label for="features">Useful features:</label>
+        <input type="checkbox" name="features" id="features" value="Strength">
+        <input type="checkbox" name="features" id="features" value="Durability">
+        <input type="checkbox" name="features" id="features" value="Design">
+        <input type="checkbox" name="features" id="features" value="Price" >
+        <label for="writtenreview">Written Review:</label>
+        <textarea name="writtenreview" id="writtenreview" ></textarea>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <input type="submit" value="Post Review">
+    </form>
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> Micah Erumaka, Nigeria</p>
+        <p id="lastModified">&copy; 2023 My Website</p>
+    </footer>
+    <script src="./scripts/form.js"> </script>
+</html>
