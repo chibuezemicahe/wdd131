@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Forms Page by Micah Erumaka."">
+    <meta name="description" content="WDD 131 - Forms Page by Micah Erumaka.">
     <meta name="author" content="Micah Erumaka">
 
     <title>Product Review - Micah Erumaka</title>
@@ -20,12 +19,12 @@
         <h1> Product Review </h1>
     </header>
     <form action="review.html" method="get">
-        <label for="name">Product Name:</label>
+        <label for="product-select">Product Name:</label>
        <select name="name" id="product-select" required>
             <option value="Select a Product " disabled id="selprod">Select a Product </option>    
        </select>    
         <div class="stars">
-            <label for="stars">Rating:</label>
+            <label>Rating:</label>
             <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar" class="star">&#9733;</label>
             <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar" class="star">&#9733;</label>
             <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar" class="star">&#9733;</label>
@@ -34,15 +33,19 @@
         </div>
         <label for="installationD">Date Of installation:</label>
         <input type="date" name="installationD" id="installationD" required>
-        <label for="features">Useful features:</label>
-        <input type="checkbox" name="features" id="features" value="Strength">
-        <input type="checkbox" name="features" id="features" value="Durability">
-        <input type="checkbox" name="features" id="features" value="Design">
-        <input type="checkbox" name="features" id="features" value="Price" >
+        <label>Useful features:</label>
+        <input type="checkbox" name="features" id="strength" value="Strength">
+        <label for="strength">Strength</label>
+        <input type="checkbox" name="features" id="durability" value="Durability">
+        <label for="durability">Durability</label>
+        <input type="checkbox" name="features" id="design" value="Design">
+        <label for="design">Design</label>
+        <input type="checkbox" name="features" id="price" value="Price">
+        <label for="price">Price</label>
         <label for="writtenreview">Written Review:</label>
         <textarea name="writtenreview" id="writtenreview" ></textarea>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
+        <label for="username">Name:</label>
+        <input type="text" name="name" id="username">
         <input type="submit" value="Post Review">
     </form>
     <footer class="footer">
