@@ -9,7 +9,7 @@ hamburger.addEventListener('click', () => {
 });
 
 
-// Example: Dynamic Testimonials
+
 const testimonials = [
   { text: "Valimoore Roofing did an amazing job!", author: "John D." },
   { text: "Professional and reliable!", author: "Sarah K." },
