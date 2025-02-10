@@ -1,0 +1,73 @@
+/* Main Section Styles */
+main {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    background-color: var(--light-bg);
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+main p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Service Sections */
+section {
+    margin-top: 70px;
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+section p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: var(--spacing-sm);
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,304 @@
+/* About Page Main Section */
+main {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    margin-top: 60px; /* Offset for fixed header */
+    background-color: var(--white);
+}
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    background-image: url('/images/hero1.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: var(--spacing-lg) var(--spacing-sm);
+    text-align: center;
+    color: var(--white);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+.about-hero .hero-content {
+    position: relative; /* Ensure it is above the overlay */
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color); /* Match brand color */
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary-color); /* Dark color for better readability */
+}
+
+/* History Section */
+.history {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    text-align: center;
+}
+
+.history h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    background-color: var(--light-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    text-align: center;
+}
+
+.mission-vision h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.mission-vision-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission, .vision {
+    background-color: var(--light-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3, .vision h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.mission p, .vision p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Core Values Section */
+.core-values {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    text-align: center;
+}
+
+.core-values h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value {
+    background-color: var(--light-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.value img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.value h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.value p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Meet the Team Section */
+.team {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background-color: var(--light-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-sm);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Achievements Section */
+.achievements {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background-color: var(--light-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.achievement-card p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-sm);
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--white);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    .timeline, .mission-vision-content, .values, .team-members, .achievement-cards {
+        grid-template-columns: 1fr;
+    }
+}
